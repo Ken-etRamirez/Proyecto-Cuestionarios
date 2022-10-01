@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="534.0" style="-fx-background-color: #c6c6c6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaDetalleCuestionarioController">
+   <children>
+      <TableView fx:id="tblPreguntasCuestionario" layoutX="63.0" layoutY="110.0" prefHeight="200.0" prefWidth="395.0">
+        <columns>
+          <TableColumn fx:id="colPregunta" prefWidth="203.0" text="Pregunta" />
+          <TableColumn fx:id="colTiempo" prefWidth="99.0" text="Tiempo" />
+            <TableColumn fx:id="colPunteo" prefWidth="92.0" text="Punteo" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblTitulo" contentDisplay="CENTER" layoutX="226.0" layoutY="13.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescripcion" contentDisplay="CENTER" layoutX="226.0" layoutY="43.0" text="Label">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnModificar" layoutX="132.0" layoutY="76.0" mnemonicParsing="false" onAction="#modificarPregunta" text="Modificar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnBorrar" layoutX="328.0" layoutY="76.0" mnemonicParsing="false" onAction="#borrarPregunta" text="Borrar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnNuevaPregunta" layoutX="210.0" layoutY="321.0" mnemonicParsing="false" onAction="#agregarPregunta" text="Nueva Pregunta">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

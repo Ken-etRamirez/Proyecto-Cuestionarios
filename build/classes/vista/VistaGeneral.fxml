@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="600.0" style="-fx-background-color: #c6c6c6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaGeneralController">
+   <children>
+      <TableView fx:id="tblCuestionarios" layoutX="48.0" layoutY="66.0" prefHeight="286.0" prefWidth="516.0">
+        <columns>
+          <TableColumn fx:id="colPin" prefWidth="61.0" text="Pin" />
+          <TableColumn fx:id="colTitulo" prefWidth="175.0" text="Titulo" />
+            <TableColumn fx:id="colDescripcion" prefWidth="155.0" text="Descripcion" />
+            <TableColumn fx:id="colEstado" prefWidth="124.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAgregar" layoutX="236.0" layoutY="361.0" mnemonicParsing="false" onAction="#nuevoCuestionario" text="Agregar Cuestionario">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnActivar" layoutX="171.0" layoutY="21.0" mnemonicParsing="false" onAction="#activarCuestionario" text="Activar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnClonar" layoutX="235.0" layoutY="21.0" mnemonicParsing="false" onAction="#clonarCuestionario" text="Clonar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnEvaluar" layoutX="295.0" layoutY="21.0" mnemonicParsing="false" onAction="#evaluar" text="Evaluar">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnTop3" layoutX="359.0" layoutY="21.0" mnemonicParsing="false" onAction="#verTop3" text="Top 3">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
