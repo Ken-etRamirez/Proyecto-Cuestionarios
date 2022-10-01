@@ -27,8 +27,9 @@ Cuestionarios, contando con opciones como:
 
 Y ese seria el funcionamiento de todo el proyeco
 
-El diagrama de clases ahora si pude subirlo , por lo que no adjunte link de Drive a eso, y lo comitie directamente
+
 ----------------------------------------------------------------
+[Diagrama de Clases App Cuestionarios.pdf](https://github.com/Ken-etRamirez/Proyecto-Cuestionarios/files/9689428/Diagrama.de.Clases.App.Cuestionarios.pdf)
 
 
 ----------------------------------------------------------------
